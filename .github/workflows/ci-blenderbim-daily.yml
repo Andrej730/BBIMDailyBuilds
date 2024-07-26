@@ -1,0 +1,48 @@
+name: ci-blenderbim-daily
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ci-blenderbim-daily.yml'
+  schedule:
+    #          ┌───────────── minute (0 - 59)
+    #          │  ┌───────────── hour (0 - 23)
+    #          │  │ ┌───────────── day of the month (1 - 31)
+    #          │  │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+    #          │  │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+    #          *  * * * *
+      - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-extensions-repo:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout BBIMDailyBuilds repository
+          uses: actions/checkout@v2
+          with:
+            repository: Andrej730/BBIMDailyBuilds
+            token: ${{ secrets.GITHUB_TOKEN }}
+            path: BBIMDailyBuilds
+
+        - name: Replace index.json with an empty file
+          run: echo -n > BBIMDailyBuilds/index.json
+
+        - name: Commit and push changes
+          run: |
+            set -x # echo shell commands
+            wget -O blender.tar.xz https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.2/blender-4.2.0-linux-x64.tar.xz
+            tar -xf blender.tar.xz
+            BLENDER_PATH=$(find blender*/ -maxdepth 0 -exec readlink -f {} \;)
+            export PATH="$PATH:$BLENDER_PATH"
+            echo $PATH
+            blender --version
+            cd BBIMDailyBuilds
+            pip install -r requirements.txt
+            python setup_extensions_repo.py --last-tag
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add index.json
+            git add readme.md
+            git commit -m "Update"
+            git push
