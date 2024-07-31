@@ -66,6 +66,7 @@
         "./wheels/pydub-0.25.1-py2.py3-none-any.whl",
         "./wheels/lxml-5.2.2-cp311-cp311-win_amd64.whl",
         "./wheels/Mako-1.3.5-py3-none-any.whl",
+        "./wheels/ifcjson-0.0.1-py3-none-any.whl",
         "./wheels/zipp-3.19.2-py3-none-any.whl",
         "./wheels/ifccsv-0.7.11a240730-py3-none-any.whl",
         "./wheels/SQLAlchemy-2.0.31-cp311-cp311-win_amd64.whl",
@@ -75,7 +76,6 @@
         "./wheels/openpyxl-3.1.5-py2.py3-none-any.whl",
         "./wheels/alembic-1.13.2-py3-none-any.whl",
         "./wheels/simple_websocket-1.0.0-py3-none-any.whl",
-        "./wheels/ifcjson-0.0.0-py3-none-any.whl",
         "./wheels/charset_normalizer-3.3.2-cp311-cp311-win_amd64.whl",
         "./wheels/python_socketio-5.11.3-py3-none-any.whl",
         "./wheels/deepdiff-7.0.1-py3-none-any.whl",
@@ -136,8 +136,8 @@
         "./wheels/brickschema_rdflib_sqlalchemy-0.6.0-py3-none-any.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240730/blenderbim_py311-0.7.11-alpha240730-windows-x64.zip",
-      "archive_size": 79035695,
-      "archive_hash": "sha256:3389455ff53f298b04607907f400507d6bd60f6efef3707054fa938f9f10ed0f"
+      "archive_size": 79043774,
+      "archive_hash": "sha256:aa7ed0e1dd8edcc7aba06ce262735853d5d520c6482c14e3a48758f13c91af12"
     },
     {
       "schema_version": "1.0.0",
@@ -200,6 +200,7 @@
         "./wheels/pydub-0.25.1-py2.py3-none-any.whl",
         "./wheels/aiohttp-3.9.5-cp311-cp311-macosx_10_9_x86_64.whl",
         "./wheels/Mako-1.3.5-py3-none-any.whl",
+        "./wheels/ifcjson-0.0.1-py3-none-any.whl",
         "./wheels/zipp-3.19.2-py3-none-any.whl",
         "./wheels/ifccsv-0.7.11a240730-py3-none-any.whl",
         "./wheels/pystache-0.6.5-py3-none-any.whl",
@@ -209,7 +210,6 @@
         "./wheels/openpyxl-3.1.5-py2.py3-none-any.whl",
         "./wheels/alembic-1.13.2-py3-none-any.whl",
         "./wheels/simple_websocket-1.0.0-py3-none-any.whl",
-        "./wheels/ifcjson-0.0.0-py3-none-any.whl",
         "./wheels/python_socketio-5.11.3-py3-none-any.whl",
         "./wheels/deepdiff-7.0.1-py3-none-any.whl",
         "./wheels/typing_extensions-4.12.2-py3-none-any.whl",
@@ -273,8 +273,8 @@
         "./wheels/brickschema_rdflib_sqlalchemy-0.6.0-py3-none-any.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240730/blenderbim_py311-0.7.11-alpha240730-macos-x64.zip",
-      "archive_size": 98818083,
-      "archive_hash": "sha256:287be7c232a1c4f79717c552a18cb8843384fd48676944b9348d90de07efb235"
+      "archive_size": 98826177,
+      "archive_hash": "sha256:dcc0cac3cdeced1de3b92486b90c1a19afb82dca3d86ac1e735eb542773e57a1"
     },
     {
       "schema_version": "1.0.0",
@@ -335,6 +335,7 @@
         "./wheels/pydub-0.25.1-py2.py3-none-any.whl",
         "./wheels/pyradiance-0.4.2-py3-none-manylinux_2_35_x86_64.whl",
         "./wheels/Mako-1.3.5-py3-none-any.whl",
+        "./wheels/ifcjson-0.0.1-py3-none-any.whl",
         "./wheels/zipp-3.19.2-py3-none-any.whl",
         "./wheels/ifccsv-0.7.11a240730-py3-none-any.whl",
         "./wheels/pystache-0.6.5-py3-none-any.whl",
@@ -343,7 +344,6 @@
         "./wheels/alembic-1.13.2-py3-none-any.whl",
         "./wheels/simple_websocket-1.0.0-py3-none-any.whl",
         "./wheels/pandas-2.2.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-        "./wheels/ifcjson-0.0.0-py3-none-any.whl",
         "./wheels/ifcopenshell-0.7.11a240730-py311-none-manylinux_2_31_x86_64.whl",
         "./wheels/MarkupSafe-2.1.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
         "./wheels/python_socketio-5.11.3-py3-none-any.whl",
@@ -410,8 +410,8 @@
         "./wheels/brickschema_rdflib_sqlalchemy-0.6.0-py3-none-any.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240730/blenderbim_py311-0.7.11-alpha240730-linux-x64.zip",
-      "archive_size": 105339152,
-      "archive_hash": "sha256:d5a720be8ce135d933f598bcea35b96beee537a7fe6d542f85de897be1bf50d1"
+      "archive_size": 105347226,
+      "archive_hash": "sha256:15e49b8bb8398061f899da98387a7d77704b11b7b119de5a68fe3a855cb368d2"
     },
     {
       "schema_version": "1.0.0",
@@ -475,6 +475,7 @@
         "./wheels/pydub-0.25.1-py2.py3-none-any.whl",
         "./wheels/lxml-5.2.2-cp311-cp311-macosx_10_9_arm64.whl",
         "./wheels/Mako-1.3.5-py3-none-any.whl",
+        "./wheels/ifcjson-0.0.1-py3-none-any.whl",
         "./wheels/zipp-3.19.2-py3-none-any.whl",
         "./wheels/ifccsv-0.7.11a240730-py3-none-any.whl",
         "./wheels/pillow-10.4.0-cp311-cp311-macosx_11_0_arm64.whl",
@@ -483,7 +484,6 @@
         "./wheels/openpyxl-3.1.5-py2.py3-none-any.whl",
         "./wheels/alembic-1.13.2-py3-none-any.whl",
         "./wheels/simple_websocket-1.0.0-py3-none-any.whl",
-        "./wheels/ifcjson-0.0.0-py3-none-any.whl",
         "./wheels/fonttools-4.53.1-cp311-cp311-macosx_11_0_arm64.whl",
         "./wheels/python_socketio-5.11.3-py3-none-any.whl",
         "./wheels/deepdiff-7.0.1-py3-none-any.whl",
@@ -547,8 +547,8 @@
         "./wheels/brickschema_rdflib_sqlalchemy-0.6.0-py3-none-any.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240730/blenderbim_py311-0.7.11-alpha240730-macos-arm64.zip",
-      "archive_size": 98070369,
-      "archive_hash": "sha256:392abb36d5bb542f1cb40b606d3ca458faf0dd227506b2cc1ccf7bd61c478c15"
+      "archive_size": 98078444,
+      "archive_hash": "sha256:15eeec5aa78a755d3d0fe5f4308eb8cd747083f7e4fbbcb7eb49337477200c7c"
     }
   ]
 }

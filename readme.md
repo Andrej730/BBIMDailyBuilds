@@ -56,7 +56,7 @@ Add\-on
 | [blenderbim\-0\.7\.11\-alpha240730](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240730/blenderbim_py311-0.7.11-alpha240730-macos-arm64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=macos-arm64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | macos\-arm64 | 93\.5MB |
 
 
-Built 2024\-07\-30, 12:23
+Built 2024\-07\-31, 12:23
 
 
 
