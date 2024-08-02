@@ -31,7 +31,7 @@ jobs:
         - name: Commit and push changes
           run: |
             set -x # echo shell commands
-            wget -O blender.tar.xz https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.2/blender-4.2.0-linux-x64.tar.xz
+            wget -q -O blender.tar.xz https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.2/blender-4.2.0-linux-x64.tar.xz
             tar -xf blender.tar.xz
             BLENDER_PATH=$(find blender*/ -maxdepth 0 -exec readlink -f {} \;)
             export PATH="$PATH:$BLENDER_PATH"
@@ -48,19 +48,19 @@ jobs:
 
         - name: Run blenderbim tests
           run: |
-            set -x # echo shell commands
+            set -x -e # echo shell commands
             BLENDER_PATH=$(find blender*/ -maxdepth 0 -exec readlink -f {} \;)
             export PATH="$PATH:$BLENDER_PATH"
-            blenderbim_zip="$(pwd)/dist/$(ls BBIMDailyBuilds/blenderbim_py311*-linux-x64.zip)"
+            blenderbim_zip="$(pwd)/$(ls BBIMDailyBuilds/blenderbim_py311*-linux-x64.zip)"
             blender --version
             blender --command extension install-file -r user_default -e $blenderbim_zip
             blender --command extension list
 
-            wget -O sverchok.zip https://github.com/nortikin/sverchok/archive/refs/heads/master.zip
+            wget -q -O sverchok.zip https://github.com/nortikin/sverchok/archive/refs/heads/master.zip
             # ifcsverchok expecting sverchok to be named "sverchok" and not "sverchok-master".
-            unzip sverchok.zip
+            unzip -q sverchok.zip
             mv sverchok-master sverchok
-            zip -r sverchok.zip sverchok
+            zip -q -r sverchok.zip sverchok
             rm -r sverchok
             blender --command extension install-file -r user_default sverchok.zip
 
@@ -74,4 +74,5 @@ jobs:
             pip install pytest
             pip install pytest-blender
             blender --background --python scripts/setup_pytest.py
+            blender --python-expr "import blenderbim; print(blenderbim.bbim_semver); import ifcopenshell; print(ifcopenshell.version)" --background
             make test

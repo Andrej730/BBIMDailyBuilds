@@ -14,11 +14,15 @@ During repository creation check "Check Updates On Startup" to get updates for d
 
 Alternatively, repository can be created manually, without drag'n'drop:
 
-- Open Blender Preferences -> "+" -> "Add Remote Remository".
+- Open Blender Preferences -> "+" -> "Add Remote Remository". You'll see a window similar to the one above.
 
 - Use as URL: `https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json` and check auto-updates if you want them.
 
-2. Then you can either drag'n'drop the same url again and install it:
+
+
+2. Install extension.
+
+To install the BlenderBIM extension you can either drag'n'drop the same url again and install it:
 
 ![alt text](img/image-3.png)
 
@@ -50,13 +54,13 @@ Add\-on
 
 | ID | Name | Description | Website | Blender Versions | Platforms | Size |
 | --- | --- | --- | --- | --- | --- | --- |
-| [blenderbim\-0\.7\.11\-alpha240801](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240801/blenderbim_py311-0.7.11-alpha240801-macos-arm64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=macos-arm64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | macos\-arm64 | 93\.5MB |
-| [blenderbim\-0\.7\.11\-alpha240801](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240801/blenderbim_py311-0.7.11-alpha240801-macos-x64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=macos-x64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | macos\-x64 | 94\.3MB |
-| [blenderbim\-0\.7\.11\-alpha240801](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240801/blenderbim_py311-0.7.11-alpha240801-windows-x64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=windows-x64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | windows\-x64 | 75\.4MB |
-| [blenderbim\-0\.7\.11\-alpha240801](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240801/blenderbim_py311-0.7.11-alpha240801-linux-x64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=linux-x64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | linux\-x64 | 100\.5MB |
+| [blenderbim\-0\.7\.11\-alpha240802](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240802/blenderbim_py311-0.7.11-alpha240802-macos-arm64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=macos-arm64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | macos\-arm64 | 98\.4MB |
+| [blenderbim\-0\.7\.11\-alpha240802](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240802/blenderbim_py311-0.7.11-alpha240802-macos-x64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=macos-x64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | macos\-x64 | 99\.1MB |
+| [blenderbim\-0\.7\.11\-alpha240802](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240802/blenderbim_py311-0.7.11-alpha240802-windows-x64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=windows-x64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | windows\-x64 | 80\.2MB |
+| [blenderbim\-0\.7\.11\-alpha240802](https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240802/blenderbim_py311-0.7.11-alpha240802-linux-x64.zip?repository=https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json&blender_version_min=4.2.0&platforms=linux-x64) | BlenderBIM | A native Building Information Model authoring platform using IFC | [link](https://blenderbim.org/) | 4\.2\.0 \- \~ | linux\-x64 | 105\.3MB |
 
 
-Built 2024\-08\-01, 12:23
+Built 2024\-08\-02, 12:36
 
 
 
