@@ -51,9 +51,9 @@ jobs:
             set -x # echo shell commands
             BLENDER_PATH=$(find blender*/ -maxdepth 0 -exec readlink -f {} \;)
             export PATH="$PATH:$BLENDER_PATH"
-            wget -O extension.zip https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240802/blenderbim_py311-0.7.11-alpha240802-linux-x64.zip
+            blenderbim_zip="$(pwd)/dist/$(ls BBIMDailyBuilds/blenderbim_py311*-linux-x64.zip)"
             blender --version
-            blender --command extension install-file -r user_default -e extension.zip
+            blender --command extension install-file -r user_default -e $blenderbim_zip
             blender --command extension list
 
             wget -O sverchok.zip https://github.com/nortikin/sverchok/archive/refs/heads/master.zip
