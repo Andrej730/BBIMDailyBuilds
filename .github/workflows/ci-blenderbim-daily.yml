@@ -35,7 +35,6 @@ jobs:
             tar -xf blender.tar.xz
             BLENDER_PATH=$(find blender*/ -maxdepth 0 -exec readlink -f {} \;)
             export PATH="$PATH:$BLENDER_PATH"
-            echo $PATH
             blender --version
             cd BBIMDailyBuilds
             pip install -r requirements.txt
@@ -46,3 +45,33 @@ jobs:
             git add readme.md
             git commit -m "Update"
             git push
+
+        - name: Run blenderbim tests
+          run: |
+            set -x # echo shell commands
+            BLENDER_PATH=$(find blender*/ -maxdepth 0 -exec readlink -f {} \;)
+            export PATH="$PATH:$BLENDER_PATH"
+            wget -O extension.zip https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240802/blenderbim_py311-0.7.11-alpha240802-linux-x64.zip
+            blender --version
+            blender --command extension install-file -r user_default -e extension.zip
+            blender --command extension list
+
+            wget -O sverchok.zip https://github.com/nortikin/sverchok/archive/refs/heads/master.zip
+            # ifcsverchok expecting sverchok to be named "sverchok" and not "sverchok-master".
+            unzip sverchok.zip
+            mv sverchok-master sverchok
+            zip -r sverchok.zip sverchok
+            rm -r sverchok
+            blender --command extension install-file -r user_default sverchok.zip
+
+            git clone https://github.com/IfcOpenShell/IfcOpenShell.git IfcOpenShell
+            cd IfcOpenShell/src/ifcsverchok
+            make dist
+            sverchok_zip="$(pwd)/dist/$(ls dist)"
+            blender --command extension install-file -r user_default $sverchok_zip
+
+            cd ../blenderbim
+            pip install pytest
+            pip install pytest-blender
+            blender --background --python scripts/setup_pytest.py
+            make test
