@@ -71,7 +71,6 @@ jobs:
             blender --command extension install-file -r user_default $sverchok_zip
 
             cd ../blenderbim
-            pip install pytest
             pip install pytest-blender
             blender --background --python scripts/setup_pytest.py
             blender --python-expr "import blenderbim; print(blenderbim.bbim_semver); import ifcopenshell; print(ifcopenshell.version)" --background
