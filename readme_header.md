@@ -14,11 +14,15 @@ During repository creation check "Check Updates On Startup" to get updates for d
 
 Alternatively, repository can be created manually, without drag'n'drop:
 
-- Open Blender Preferences -> "+" -> "Add Remote Remository".
+- Open Blender Preferences -> "+" -> "Add Remote Remository". You'll see a window similar to the one above.
 
 - Use as URL: `https://raw.githubusercontent.com/Andrej730/BBIMDailyBuilds/main/index.json` and check auto-updates if you want them.
 
-2. Then you can either drag'n'drop the same url again and install it:
+
+
+2. Install extension.
+
+To install the BlenderBIM extension you can either drag'n'drop the same url again and install it:
 
 ![alt text](img/image-3.png)
 
