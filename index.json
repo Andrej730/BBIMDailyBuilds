@@ -137,8 +137,8 @@
         "./wheels/aiohttp-3.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240805/blenderbim_py311-0.7.11-alpha240805-linux-x64.zip",
-      "archive_size": 110449145,
-      "archive_hash": "sha256:ed9ad32c869dc0df78cae9ba17794caa16061755e5a7b7cdedba7c5a7edfe02b"
+      "archive_size": 110449119,
+      "archive_hash": "sha256:84e2d739f264d3ed9c27a35b1acf32fc63242d76771f33f42f527581bf228cd7"
     },
     {
       "schema_version": "1.0.0",
@@ -275,8 +275,8 @@
         "./wheels/alembic-1.13.2-py3-none-any.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240805/blenderbim_py311-0.7.11-alpha240805-windows-x64.zip",
-      "archive_size": 84146563,
-      "archive_hash": "sha256:6b2e479a9e08d11a6f5a943603e6879533d7a75612bc32cbfb9a1148a1997ef0"
+      "archive_size": 84146530,
+      "archive_hash": "sha256:b5c0fa6d0ac415b75f2e9dca79e2d1d3b8cbfa18db3f6060d4896ba39776bce5"
     },
     {
       "schema_version": "1.0.0",
@@ -413,8 +413,8 @@
         "./wheels/alembic-1.13.2-py3-none-any.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240805/blenderbim_py311-0.7.11-alpha240805-macos-arm64.zip",
-      "archive_size": 103171175,
-      "archive_hash": "sha256:be48e48b788eb64bd684e1a6a1b14130cdef4c3d42764a5cffc98e961f0dd68e"
+      "archive_size": 103171137,
+      "archive_hash": "sha256:82e72ad9f79bb56edc09605e26e87a0763175a396cdf03b3f70d6d69c4dd3a71"
     },
     {
       "schema_version": "1.0.0",
@@ -551,8 +551,8 @@
         "./wheels/alembic-1.13.2-py3-none-any.whl"
       ],
       "archive_url": "https://github.com/IfcOpenShell/IfcOpenShell/releases/download/blenderbim-0.7.11-alpha240805/blenderbim_py311-0.7.11-alpha240805-macos-x64.zip",
-      "archive_size": 103915425,
-      "archive_hash": "sha256:ddba629f72c0d8a59e6402a499c25c8121cedc8c512275d9f2bfaeee1fc784eb"
+      "archive_size": 103915364,
+      "archive_hash": "sha256:e385744b1b3e47c0b96bd5ecc0c3c95efa36d1884d9ac5d92aabc99541e3ddf9"
     }
   ]
 }
